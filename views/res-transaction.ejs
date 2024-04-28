@@ -1,0 +1,35 @@
+<div class="d-flex justify-content-center">
+<br>
+</div>
+<div class="d-flex justify-content-center">
+    <form method="POST" action="/nota">
+        <div class="card" style="width: 400px; height: 320; background-color: white;">
+            <div class="card-body">
+                <p><strong>Konfirmasi Transaksi <%= trans.game %></strong></p>
+                <input type="hidden" class="form-control" id="id" name="game" value="<%= trans.game %>" required>
+                <div class="form-group">
+                    <label for="id">Player ID (Teliti lagi)</label>
+                    <p type="id" class="form-control" id="id" name="id"><%= trans.id %></p>
+                    <input type="hidden" class="form-control" id="id" name="id" value="<%= trans.id %>"></input>
+                </div>
+                <div class="form-group">
+                    <label for="id">Diamonds</label>
+                    <p type="text" class="form-control" id="id" name="dm"><%= trans.dm %></p>
+                    <input type="hidden" class="form-control" id="id" name="dm" value="<%= trans.dm %>"></input>
+                </div>
+                <div class="form-group">
+                    <label for="id">Harga</label>
+                    <p type="text" class="form-control" id="id" name="rp"><%= trans.rp %></p>
+                    <input type="hidden" class="form-control" id="id" name="rp" value="<%= trans.rp %>"></input>
+                </div>
+                <div class="form-group">
+                    <label for="id">Date</label>
+                    <p type="text" class="form-control" id="id" name="rp"><%= trans.date %></p>
+                    <input type="hidden" class="form-control" id="id" name="date" value="<%= trans.date %>"></input>
+                </div>
+            </div>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary container"><strong>B E L I</strong></button>
+    </form>
+</div>

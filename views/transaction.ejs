@@ -1,0 +1,20 @@
+<div class="d-flex justify-content-center">
+    <form method="POST" action="/transaction">
+        <div class="card" style="width: 400px; height: 320; background-color: white;">
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="id"><strong>Player ID</strong></label>
+                    <p type="id" class="form-control" id="id" name="id"><%= trans.id %></p>
+                </div>
+                <div class="form-group">
+                  <label for="id"><strong>Top Up</strong></label>
+                  <p type="text" class="form-control" id="id" name="gridRadios"><%= trans.topup %></p>
+              </div>
+            </div>
+        </div>
+        <p><center>(Screenshot dan chat admin untuk membayar)</center></p>
+        <a href="https://wa.me/+6285895004066" class="btn btn-primary container"><strong>Bayar (chat)</strong></a>
+        <p><center>atau <a href="/register">daftar reseller</a></center></p>
+        <center><p>Pembayaran yang mudah dan harga <a href="/reseller/ff-menu">murah</a></p></center>
+    </form>
+</div>

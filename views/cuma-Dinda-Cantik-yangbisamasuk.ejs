@@ -1,0 +1,43 @@
+<h5><center>Selamat Datang Dinda Cantik :3</center></h5>
+<br>
+<% if (message) {%> 
+    <div class="alert <%= messageClass %>" role="alert">
+        <%= message %> 
+    </div>
+<% } %> 
+<div class="d-flex justify-content-center">
+    <div class="card" style="width: 400px; height: 400; background-color: white;">
+        <div class="card-body">
+            <form method="POST" action="/cuma-Dinda-Cantik-yangbisamasuk">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label>Tambah Saldo</label>
+                    <input type="text" class="form-control" id="fPay" name="fPay" placeholder="Tambahkan fPay">
+                </div>
+                <div class="form-group">
+                    <label>Kurangi Saldo</label>
+                    <input type="text" class="form-control" id="fPay" name="minfPay" placeholder="Kurangi fPay">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="disc" id="exampleRadios2" value="false" readonly checked>
+                    <label class="form-check-label" for="exampleRadios2">
+                      Diskon ML ON
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="disc" id="exampleRadios1" value="no" required>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Diskon ML OFF
+                    </label>
+                </div>
+                  <br>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary container">Proses Saldo</button>
+                </div>
+            </form>
+        </div>            
+    </div>
+</div>
